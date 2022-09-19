@@ -1,0 +1,47 @@
+body,html{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+
+.detector{
+    margin-top: 5%;
+    width:90%;
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+.draw_pad{
+  background-color: white;
+  border: 2px solid black;
+}
+#prediction{
+    width:90%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.numbers{
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: center;
+}
+#indicator{
+    height:70%;
+    background-color: orange;
+
+
+}
+.indicator{
+    height:70%;
+    background-color: orange;
+
+
+}

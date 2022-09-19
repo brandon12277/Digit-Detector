@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Detector</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <link rel="stylesheet" href="home.css"/>
+</head>
+<body onload="init()">
+   <div class="detector">
+    <div class="canvas_div">
+
+        <canvas width="300" height="200" class="draw_pad" id="canvas"></canvas>
+        <canvas width="28" height="28" class="draw_pad" id="canvas_small" ></canvas>
+        <form method="POST" action="/predict" id="form">
+         <input id="img_data" type="hidden" name="img">
+        </form>
+        
+         <button onclick="updateDisplay()">Make Prediction</button>
+         <button onclick="erase()">Erase</button>
+        <p id="answer"></p>
+      
+    </div>
+      
+      <div id="prediction">
+        <div class="numbers" >
+            0
+            <div  class="indicator" id="0"></div>
+         </div>
+         <div class="numbers">
+            1
+            <div class="indicator"  id="1"></div>
+         </div>
+         <div class="numbers">
+            2
+            <div  class="indicator"  id="2"></div>
+         </div>
+         <div class="numbers" >
+            3
+            <div class="indicator" id="3"></div>
+         </div>
+
+         <div class="numbers" >
+            4
+            <div  class="indicator" id="4"></div>
+         </div>
+         <div class="numbers">
+            5
+            <div  class="indicator"  id="5"></div>
+         </div>
+         <div class="numbers" >
+            6
+            <div  class="indicator" id="6"></div>
+         </div>
+         <div class="numbers" >
+            7
+            <div  class="indicator" id="7"></div>
+         </div>
+         <div class="numbers" >
+            8
+            <div  class="indicator" id="8"></div>
+         </div>
+
+         <div class="numbers" >
+            9
+            <div  class="indicator" id="9"></div>
+         </div>
+      </div>
+   </div>
+</body>
+<script src="script.js">
+
+</script>
+
+</html>
